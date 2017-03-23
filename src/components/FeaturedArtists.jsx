@@ -8,6 +8,7 @@ export default class MyFeaturedArtists extends React.Component {
 	render(){
 		return(
    <OwlCarousel slideSpeed={300} itemsDesktop autoPlay >
+
     <div><DisplayCard /></div>
     <div><DisplayCard /></div>
     <div><DisplayCard /></div>

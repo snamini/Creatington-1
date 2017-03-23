@@ -12,14 +12,13 @@ import FeaturedArtists from '../components/FeaturedArtists';
 import DisplayCard from '../components/DisplayCard';
 import FloatBtn from '../components/FloatBtn';
 import Pagination from '../components/Pagination';
- // import Login from "../components/Login";
+import Login from "../components/Login";
 
 // then we use that component class that we just imported to make our special components
 // // Home inherited a bunch of things from the component
 class Home extends Component {
     render() {
         return (
-                   <div>
 
                     <div>
                       <h1 className="title">Creatington</h1>
@@ -30,14 +29,12 @@ class Home extends Component {
                           <SearchBS />
                         </Col>
                       </Row>
-
+                      <Login auth={this.props.auth}/>
 {/*-------------------------Card Section------------------*/}
-
-<h1>Featured Artists</h1>
                       <FeaturedArtists />
 
             </div>
-</div>
+
 
         );
     }

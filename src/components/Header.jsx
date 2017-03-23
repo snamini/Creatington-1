@@ -18,6 +18,7 @@ export default class MyHeader extends React.Component {
 				navItems = [
 				 <NavItem key="search" href='/home'>Home</NavItem>,
 				 <NavItem key="portfolio" href='/portfolio' >Portfolio</NavItem>,
+				 <NavItem key="messages" href='/messages'>Messages</NavItem>,
 				 <NavItem key="community" href='/community'>Community</NavItem>,
 				];
 			} else {

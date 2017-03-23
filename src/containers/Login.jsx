@@ -11,6 +11,7 @@ export class Login extends React.Component {
 
   render() {
     const { auth } = this.props
+        console.log(auth)
     return (
             <div>
 {/*-------------------------Register Section------------------*/}      

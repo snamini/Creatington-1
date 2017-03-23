@@ -10,8 +10,8 @@ import Login from './containers/Login';
 //Auth0
 import AuthService from './utils/AuthService'
 import Container from './containers/Container'
-//import Home from './Home/Home'
-//import Login from './Login/Login'
+import SearchBS from "./components/SearchBS"
+import Messages from "./containers/Messages"
 
 const auth = new AuthService('52U7LZuyd6wsDLBHtVDBbLogIfh9dDNB', 'volskaia.auth0.com');
 
@@ -32,6 +32,7 @@ export default () => {
  	   	<IndexRoute component={Home}/>
 		<Route path="/portfolio"  onEnter={requireAuth} component={Portfolio} />
 		<Route path="/community"   component={Community} />
+		<Route path="/messages" component={Messages}/>
 		<Route path="/challenges"  component={Challenges} /> 
 		<Route path="/Login" component={Login} />
 	    <Route path="/home" component={Home}  />

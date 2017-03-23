@@ -3,6 +3,8 @@ import {ButtonToolbar, Button} from 'react-bootstrap'
 import AuthService from '../utils/AuthService'
 import styles from '../styles/styles.module.css'
 
+const auth = new AuthService('52U7LZuyd6wsDLBHtVDBbLogIfh9dDNB', 'volskaia.auth0.com');
+
 export class LoginOne extends React.Component {
   static propTypes = {
     location: T.object,
@@ -12,20 +14,14 @@ export class LoginOne extends React.Component {
   render() {
     const { auth } = this.props
     console.log(auth)
-    return (
-            <div>
-{/*-------------------------Register Section------------------*/}      
-      <div className={styles.root}>
-        <h2>Login </h2>
-        <ButtonToolbar className={styles.toolbar}>
+    return (   
           <Button bsStyle="primary" onClick={auth.login.bind(this)}>Login or Register</Button>
-        </ButtonToolbar>
-      </div>
-                </div>
     )
   }
 }
 
 export default LoginOne;
+
+
 
 

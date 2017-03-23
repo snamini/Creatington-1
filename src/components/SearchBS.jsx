@@ -1,7 +1,7 @@
 import React from 'react';
 import './SearchBS.css';
 import { Row, Col, Input, Icon, Dropdown, Button } from 'react-materialize';
-// import LoginOne from "./Login"
+ // import Login from "./Login";
 
 var style = {
 	color: '#FFF'
@@ -51,6 +51,7 @@ export default class SearchBS extends React.Component {
         <Col s={4} offset='s1' className="joinCol">
         	<p style={style}>Join now and get updated with all new artists</p>
           <button className="btn btn-info" data-toggle="modal" data-target="#loginpop">Login</button>
+
         </Col>
         </Row>
         </div>
