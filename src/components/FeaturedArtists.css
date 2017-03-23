@@ -1,0 +1,12 @@
+.owl-carousel {
+	margin-left: 20px;
+}
+
+.owl-item img {
+	width: 199px;
+	height: 132px;
+}
+
+.owl-item {
+	margin: 0 10px 0 10px;
+}

@@ -1,0 +1,18 @@
+.banner-search {
+background: url(bginside.jpg) #111;
+    color: #fff;
+    padding: 20px 0 10px 0;
+    font-size: 16px;
+}
+
+* {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.joinCol {
+	margin-top: 20px;
+}
+
+i::after {
+	margin-top: 8px;
+}

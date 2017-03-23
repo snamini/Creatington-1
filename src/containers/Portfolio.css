@@ -1,0 +1,10 @@
+.class {
+  overflow: hidden;
+
+}
+
+#jumbotron-img {
+  width: 100% inherit;
+  height: 200px;
+  background: pink;
+}
