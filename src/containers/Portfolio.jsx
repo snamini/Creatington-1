@@ -45,7 +45,7 @@ constructor(props, context) {
         return (
           
       <div className="all">
-          <Header/>
+          
           <div>
               <Row>
                   <Col s={12}>

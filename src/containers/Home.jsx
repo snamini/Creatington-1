@@ -31,6 +31,7 @@ class Home extends Component {
                       </Row>
                       <Login auth={this.props.auth}/>
 {/*-------------------------Card Section------------------*/}
+                      <h1>FeaturedArtists</h1>
                       <FeaturedArtists />
 
             </div>
