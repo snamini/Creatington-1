@@ -4,6 +4,8 @@ import { Route, IndexRoute } from 'react-router';
 //import index from './index.js';
 import Home from './containers/Home';
 import Portfolio from './containers/Portfolio';
+import Messages from './containers/Messages';
+import Search from './containers/Search';
 import Community from './containers/Community';
 import Challenges from './containers/Challenges';
 import Login from './containers/Login';
@@ -11,7 +13,6 @@ import Login from './containers/Login';
 import AuthService from './utils/AuthService'
 import Container from './containers/Container'
 import SearchBS from "./components/SearchBS"
-import Messages from "./containers/Messages"
 
 const auth = new AuthService('52U7LZuyd6wsDLBHtVDBbLogIfh9dDNB', 'volskaia.auth0.com');
 
@@ -33,7 +34,8 @@ export default () => {
 		<Route path="/portfolio"  onEnter={requireAuth} component={Portfolio} />
 		<Route path="/community"   component={Community} />
 		<Route path="/messages" component={Messages}/>
-		<Route path="/challenges"  component={Challenges} /> 
+		<Route path="/challenges"  component={Challenges} />
+		<Route path="/search" component={Search} /> 
 		<Route path="/Login" component={Login} />
 	    <Route path="/home" component={Home}  />
 	</Route>
