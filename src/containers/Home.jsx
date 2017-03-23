@@ -22,6 +22,7 @@ class Home extends Component {
 
                     <div>
                       <h1 className="title">Creatington</h1>
+                      <Login auth={this.props.auth}/>                      
                       <Slider />
 
                       <Row>
@@ -29,7 +30,7 @@ class Home extends Component {
                           <SearchBS />
                         </Col>
                       </Row>
-                      <Login auth={this.props.auth}/>
+
 {/*-------------------------Card Section------------------*/}
                       <h1>FeaturedArtists</h1>
                       <FeaturedArtists />
